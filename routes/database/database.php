@@ -125,25 +125,15 @@ $data = [
 // Filter database by type
 
 $lunghe = [];
+$corte = [];
+$cortissime = [];
 
 foreach ($data as $tipo) {
     if ( $tipo['tipo'] === 'lunga' ) {
         $lunghe[] = $tipo;
-    }
-}
-
-$corte = [];
-
-foreach ($data as $tipo) {
-    if ($tipo['tipo'] === 'corta' ) {
+    } elseif ($tipo['tipo'] === 'corta' ) {
         $corte[] = $tipo;
-    }
-}
-
-$cortissime = [];
-
-foreach ($data as $tipo) {
-    if ($tipo['tipo'] === 'cortissima' ) {
+    } elseif ($tipo['tipo'] === 'cortissima' ) {
         $cortissime[] = $tipo;
     }
 }
