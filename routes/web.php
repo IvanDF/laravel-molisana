@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     include 'database/database.php';
+    // dd($lunghe);
 
-    return view('welcome', [ 'cards' => $data ]);
+    return view('welcome', [ 'lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
 });
