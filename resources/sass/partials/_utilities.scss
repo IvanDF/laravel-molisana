@@ -10,3 +10,38 @@
     width: 100%;
     height: auto;
 }
+
+// LISTS
+.h-list {
+    &.center {
+        justify-content: center;
+    }
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+// LISTS
+.v-list {
+    list-style: none;
+}
+
+// TEXTS
+.txt-center {
+    text-align: center;
+}
+
+// TYPHOGRAPHY
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: palette(3);
+    font-size: 2.2rem;
+    margin-left: 10px;
+}
+
+// MARGINS 
+.mb-50 {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,18 @@
+// MAIN HEADER
+.navbar-item {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    transition: background 250ms ease-out;
+    a {
+        color: $black
+    }
+    &.active,
+    &:hover {
+        background: palette(1);
+    }
+}
+.main-header {
+    img {
+        padding: 50px 0;
+    }
+}

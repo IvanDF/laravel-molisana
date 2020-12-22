@@ -10,5 +10,5 @@ Route::get('/', function () {
     include 'database/database.php';
     // dd($lunghe);
 
-    return view('welcome', [ 'lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
+    return view('home', [ 'lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
 });

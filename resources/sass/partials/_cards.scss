@@ -2,9 +2,10 @@
 .cards-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .card {
     width: calc(100% / 3 - 20px );
-    margin: 0 10px;
+    margin: 5px 10px;
 }

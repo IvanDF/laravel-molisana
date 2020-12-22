@@ -1,5 +1,35 @@
 // COLOR PALETTE
-$palette: #d5e4e9,#c2e3fc,#a3a3a3;
+$palette: #d5e4e9,#c2e3fc, #002d75, rgb(87, 87, 87);
+
+@function palette($col) {
+    @return nth($palette, $col)
+}
 
 $white: #fff;
 $black: #000;
+
+// FONT
+$baseFont: 'Nunito', Sans-Serif;
+
+// MARGINS
+@mixin m($type: 'b-25') {
+    @if $type == 'b-25' {
+        margin-bottom: 25px;
+    }
+    @else if $type == 'b-50' {
+        margin-bottom: 50px;
+    }
+    @else if $type == 'b-100' {
+        margin-bottom: 100px;
+    }
+    @else if $type == 't-25' {
+        margin-bottom: 25px;
+    }
+    @else if $type == 't-50' {
+        margin-bottom: 50px;
+    }
+    @else if $type == 't-100' {
+        margin-bottom: 100px;
+    }
+    
+}
