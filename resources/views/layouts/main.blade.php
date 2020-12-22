@@ -15,7 +15,7 @@
     <body>
 
         <!-- HEADER -->
-        @include( 'partials.header' )
+        @include( 'partials.header', ['isActive' => 'active'] )
 
         <main class="main-section">
             @yield('main-content')
