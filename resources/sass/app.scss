@@ -1,3 +1,7 @@
+// FONTAWESOME
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
 // VARS
 @import 'partials/vars';
 
@@ -15,6 +19,9 @@
 
 // CARDS
 @import 'partials/cards';
+
+// PRODUCT DETAIL
+@import 'partials/product';
 
 // FOOTER
 @import 'partials/footer';

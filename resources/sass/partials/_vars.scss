@@ -1,5 +1,5 @@
 // COLOR PALETTE
-$palette: #d5e4e9,#c2e3fc, #002d75, rgb(87, 87, 87);
+$palette: #d5e4e9,#c2e3fc, #002d75, rgb(87, 87, 87), #b8dae6;
 
 @function palette($col) {
     @return nth($palette, $col)
