@@ -1,11 +1,13 @@
+// MAIN FOOTER
 .main-footer {
-    padding: 70px 0;
+    padding: 70px 0 0;
 }
 .footer-content {
     display: flex;
     justify-content: space-between;
+    color: palette(3);
     a {
-        color: palette(4);
+        color: palette(3);
         transition: color 200ms ease-in;
         &:hover {
             color: $black;
@@ -15,5 +17,19 @@
     h3 {
         margin-bottom: 10px;
         @include m('b-25')
+    }
+}
+
+.hero-footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+
+    // MAIN FOOTER
+    .footer-content {
+        flex-direction: column;
+        padding: 50px;
     }
 }

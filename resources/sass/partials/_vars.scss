@@ -1,15 +1,13 @@
-// COLOR PALETTE
-$palette: #d5e4e9,#c2e3fc, #002d75, rgb(87, 87, 87), #b8dae6;
+$palette: (#002d73,#b2e5fc, #848d9b, #002d73, #b7dae5);
 
 @function palette($col) {
-    @return nth($palette, $col)
+    @return nth($palette, $col);
 }
 
-$white: #fff;
 $black: #000;
+$white: #fff;
 
-// FONT
-$baseFont: 'Nunito', Sans-Serif;
+$base-font: 18px 'Nunito', Sans-Serif;
 
 // MARGINS
 @mixin m($type: 'b-25') {
@@ -31,5 +29,88 @@ $baseFont: 'Nunito', Sans-Serif;
     @else if $type == 't-100' {
         margin-bottom: 100px;
     }
-    
+    @else if $type == '-y25' {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    @else if $type == '-y50' {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    @else if $type == '-y100' {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+}
+
+// PADDING
+@mixin p($type: 'b-25') {
+    @if $type == 'b-25' {
+        padding-bottom: 25px;
+    }
+    @else if $type == 'b-50' {
+        padding-bottom: 50px;
+    }
+    @else if $type == 'b-100' {
+        padding-bottom: 100px;
+    }
+    @else if $type == 't-25' {
+        padding-bottom: 25px;
+    }
+    @else if $type == 't-50' {
+        padding-bottom: 50px;
+    }
+    @else if $type == 't-100' {
+        padding-bottom: 100px;
+    }
+    @else if $type == '-y25' {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    @else if $type == '-y50' {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    @else if $type == '-y100' {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+
+// CENTER
+@mixin center($type: 'ab-xy') {
+    @if $type == 'ab-y' {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @else if $type == 'ab-x' {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @else if $type == 'ab-xy' {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+    }
+    @else if $type == 'fx-y' {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }  
+    @else if $type == 'fx-x' {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }  
+    @else if $type == 'fx-xt' {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }  
 }

@@ -1,47 +1,136 @@
 // CONTAINER
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-// IMAGES
-.img-resp {
-    width: 100%;
-    height: auto;
-}
-
-// LISTS
-.h-list {
-    &.center {
-        justify-content: center;
-    }
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-// LISTS
-.v-list {
-    list-style: none;
-}
-
-// TEXTS
+// Text
 .txt-center {
     text-align: center;
 }
 
-// TYPHOGRAPHY
-a {
-    text-decoration: none;
+// Lists
+.h-list {
+    display: flex;
+    list-style: none;
+    &.center {
+        justify-content: center;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
-h2 {
-    color: palette(3);
-    font-size: 2.2rem;
-    margin-left: 10px;
+.img-resp {
+    width: 100%;
+    height: auto;
+    display: flex;
 }
 
-// MARGINS 
-.mb-50 {
-    margin-bottom: 50px;
+// Lists
+.v-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+// Margins
+@for $i from 1 through 4 {
+    .mb-#{$i * 25} {
+        margin-bottom: $i*25 + px;
+    }
+}
+@for $i from 1 through 4 {
+    .mt-#{$i * 25} {
+        margin-top: $i*25 + px;
+    }
+}
+
+@for $i from 1 through 4 {
+    .pb-#{$i * 25} {
+        padding-bottom: $i*25 + px;
+    }
+}
+@for $i from 1 through 4 {
+    .pt-#{$i * 25} {
+        padding-top: $i*25 + px;
+    }
+}
+
+@for $i from 1 through 4 {
+    .m-y#{$i * 25} {
+        margin-top: $i*25 + px;
+        margin-bottom: $i*25 + px;
+    }
+}
+@for $i from 1 through 4 {
+    .p-y#{$i * 25} {
+        padding-top: $i*25 + px;
+        padding-bottom: $i*25 + px;
+    }
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 350ms;
+    span {
+        display: block;
+        height: 6px;
+        width: 35px;
+        margin-bottom: 6px;
+        background: palette(4);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: transform 350ms;
+        &last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hamburger-menu.active {
+    transform: translateX(15px);
+    span {
+        &:first-child {
+            transform: rotate(45deg) translateY(17px);
+        }
+        &:last-child {
+            transform: rotate(-45deg) translateY(-16px);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+            transform: translateX( 10px)
+        }
+    }
+}
+
+// Querys
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+}
+
+
+/* DESKTOP VERSION */
+@media screen and (max-width: 992px) {
+
+    // Querys
+    .mobile-only {
+        display: flex;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
 }

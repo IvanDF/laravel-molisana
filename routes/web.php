@@ -2,15 +2,23 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+// HOME
 Route::get('/', function () {
+    return view('home');
+})-> name('home');
+
+// PRODUCTS
+Route::get('/products', function () {
+
     include 'database/database.php';
 
     return view('products', compact('lunghe', 'corte', 'cortissime'));
-})->name('products');
+
+})-> name('products');
 
 // PRODUCT DETAIL
 Route::get('/product-detail/{id}', function ($id) {
+
     // dump($id);
 
     include 'database/database.php';
@@ -20,17 +28,11 @@ Route::get('/product-detail/{id}', function ($id) {
 
     $product = $data[$id];
 
-    return view('product-detail' , compact('product', 'length', 'id'));
-})->name('product');
+    return view('product-detail', compact('product', 'id', 'length'));
 
-// HOME
-Route::get('/home', function () {
-
-    return view('home');
-})->name('home');
+}) -> name('product');
 
 // NEWS
 Route::get('/news', function () {
-
     return view('news');
-})->name('news');
+})-> name('news');

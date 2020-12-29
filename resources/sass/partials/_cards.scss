@@ -1,3 +1,13 @@
+.main-section {
+    background: url('../img/cards/fondo-pag-speciali.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include p(-y50);
+    h2 {
+        margin-left: 10px;
+    }
+}
+
 // CARDS
 .cards-list {
     display: flex;
@@ -37,7 +47,6 @@
         }
         h3 {
             top: 50px;
-            font-size: 28px;
         }
         a {
             bottom: 50px;
@@ -54,5 +63,18 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+    width: calc(100% / 2 - 20px );
+    margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+    width: 100%;
     }
 }

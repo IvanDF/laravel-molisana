@@ -5,14 +5,10 @@
             <div class="info-text">
                 <ul class="v-list">
                     <li>
-                        <a href="#">
-                            <strong>Ragione sociale:</strong> La Molisana S.P.A.
-                        </a>
+                        <strong>Ragione sociale:</strong> La Molisana S.P.A.
                     </li>
                     <li>
-                        <a href="#">
-                            <strong>Sede legale:</strong> Contrada Colle delle Api, 100/A<br>86100 - Campobasso (CB)
-                        </a>
+                        <strong>Sede legale:</strong> Contrada Colle delle Api, 100/A<br>86100 - Campobasso (CB)
                     </li>
                     <li>
                         <a href="#">
@@ -30,9 +26,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Per segnalazioni scrivere a:
-                        </a>
+                        Per segnalazioni scrivere a:
                     </li>
                     <li>
                         <a href="#">
@@ -40,9 +34,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Per contattare l'area commerciale:
-                        </a>
+                        Per contattare l'area commerciale:
                     </li>
                     <li>
                         <a href="#">
@@ -50,9 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Per contattare l'area export:
-                        </a>
+                        Per contattare l'area export:
                     </li>
                     <li>
                         <a href="#">
@@ -60,8 +50,9 @@
                         </a>
                     </li>
                     <li>
+                        Dati aziendali: 
                         <a href="#">
-                            Dati aziendali: leggi di più
+                            leggi di più
                         </a>
                     </li>
                 </ul>
@@ -137,5 +128,8 @@
             </li>
         </ul>
         </div>
+    </div>
+    <div class="hero-footer">
+        <img class="img-resp" src="{{ asset('img/footer/footer-montagne-bottom.jpg') }}" alt="">
     </div>
 </footer>

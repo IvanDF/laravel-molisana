@@ -1,5 +1,14 @@
-@extends('layouts/main')
+@extends('layouts.main')
 
-@section('main-content') 
-    <h2>HOME SECTION</h2>
+@section('title')
+    <title>Molisana - pasta semole e farine di qualità</title>
+@endsection
+
+@section('content')
+
+    <div class="container">
+            <h2>HOME</h2>
+    </div>
+
+
 @endsection

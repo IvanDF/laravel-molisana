@@ -6,18 +6,17 @@ $lunghe = [];
 $corte = [];
 $cortissime = [];
 
-foreach ($data as $key => $tipo) {
+foreach ( $data as $key => $cards ) {
 
-    $tipo['id'] = $key; 
-    // $data = $tipo;
+    $cards['id'] = $key;
 
-    if ( $tipo['tipo'] === 'lunga' ) {
-        $lunghe[] = $tipo;
-    } elseif ($tipo['tipo'] === 'corta' ) {
-        $corte[] = $tipo;
-    } elseif ($tipo['tipo'] === 'cortissima' ) {
-        $cortissime[] = $tipo;
-    }
+    if ( $cards['tipo'] === 'lunga' ) {
+        $lunghe[] = $cards;
+    } elseif ( $cards['tipo'] === 'corta' ) {
+        $corte[] = $cards;
+    } elseif ( $cards['tipo'] === 'cortissima' ) {
+        $cortissime[] = $cards;
+    };
+};
 
-}
 // dd($lunghe, $corte, $cortissime);

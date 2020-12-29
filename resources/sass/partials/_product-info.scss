@@ -1,0 +1,31 @@
+.product-section {
+    position: relative;
+    background: palette(5);
+    color: palette(4);
+    font-weight: bold;
+    padding: 0 60px;
+}
+
+.next, 
+.prev {
+    @include center(ab-y);
+    padding: 10px 5px;
+    background: rgba($white, .45);
+    border-radius: 5px;
+    font-size: 5rem;
+    color: $white;
+    transition: color 300ms ease-out,
+                background 300ms ease-in;
+    &:hover {
+        color: palette(4);
+        background: $white;
+    }
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}

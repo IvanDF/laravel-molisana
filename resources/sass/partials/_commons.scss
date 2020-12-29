@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+// GENERAL SETTINGS
 body {
-    font: 18px $baseFont;
+    font: $base-font
+}
+
+// TYPHOGRAPHY
+h2 {
+    font-size: 2rem;
+    color: palette(4);
+}
+h3 {
+    font-size: 1.4rem;
 }

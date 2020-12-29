@@ -5,23 +5,20 @@
 // VARS
 @import 'partials/vars';
 
-// GENERAL SETTINGS
-@import 'partials/commons';
-
 // UTILITIES
 @import 'partials/utilities';
+
+// COMMONS
+@import 'partials/commons';
 
 // HEADER
 @import 'partials/header';
 
-// MAIN SECTION
-@import 'partials/main';
-
 // CARDS
 @import 'partials/cards';
 
-// PRODUCT DETAIL
-@import 'partials/product';
+// SINGLE PRODUCT INFO
+@import 'partials/product-info';
 
 // FOOTER
 @import 'partials/footer';
