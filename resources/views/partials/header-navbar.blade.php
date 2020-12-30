@@ -11,7 +11,7 @@
     <li class="nav-item active">
         <a href="{{ route('products') }}">Prodotti</a>
     </li>
-@elseif(request()->is('product-detail/'))
+@elseif(strpos($_SERVER['REQUEST_URI'], 'product-detail'))
     <li class="nav-item active">
         <a href="{{ route('products') }}">Prodotti</a>
     </li>

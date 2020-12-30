@@ -12,7 +12,7 @@
                 <i class="prev fas fa-angle-left"></i>
             </a>
     @endif
-    @if ( $id < ($length - 1) )
+    @if ( $id < ( $length - 1) )
         <a href="{{ $id + 1 }}">
             <i class="next fas fa-angle-right"></i>
         </a>
