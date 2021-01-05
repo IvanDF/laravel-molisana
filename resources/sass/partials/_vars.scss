@@ -99,8 +99,7 @@ $baseFont: 18px 'Nunito', Sans-Serif;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateX(-50%);
-        transform: translateY(-50%);
+        transform: translateY(-50%) translateX(-50%);
     }
     @else if $type == 'fx-y' {
         position: fixed;
@@ -116,7 +115,6 @@ $baseFont: 18px 'Nunito', Sans-Serif;
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translateY(-50%);
-        transform: translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
     }  
 }

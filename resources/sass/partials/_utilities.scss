@@ -12,6 +12,19 @@
     font-size: 18px;
     outline: none;
     border: none;
+    cursor: pointer;
+    background: $white;
+}
+
+// Layouts
+.df {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    & > .w50 {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+    }
 }
 
 // Text
@@ -130,7 +143,6 @@
     display: flex;
 }
 
-
 /* DESKTOP VERSION */
 @media screen and (max-width: 992px) {
 
@@ -141,5 +153,16 @@
     
     .desktop-only {
         display: none;
+    }
+
+    // Layouts
+    .df {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        & > .w50 {
+            width: 100%;
+            flex-wrap: wrap;
+        }
     }
 }

@@ -15,9 +15,11 @@
                 <span></span>
                 <span></span>
             </div>
-            <ul v-if="isVisible" class="nav-list v-list txt-center mobile-only dropdown-menu">
-                @include ('partials.header-navbar')
-            </ul>
+            <transition name="slide">
+                <ul v-if="isVisible" class="nav-list v-list txt-center mobile-only dropdown-menu">
+                    @include ('partials.header-navbar')
+                </ul>
+            </transition>
         </nav>
     </div>
 </header>
