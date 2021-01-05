@@ -5,6 +5,15 @@
     margin: 0 auto;
 }
 
+// Buttons
+.btn {
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
 // Text
 .txt-center {
     text-align: center;
@@ -28,7 +37,7 @@
     display: flex;
 }
 
-// Lists
+// Lists    
 .v-list {
     display: flex;
     flex-direction: column;

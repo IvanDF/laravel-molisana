@@ -1,13 +1,19 @@
 $palette: (#002d73,#b2e5fc, #848d9b, #002d73, #b7dae5);
 
+$homePalette: (#cc2332, #a9202b, #e4ac27, #aa8f16);
+
 @function palette($col) {
     @return nth($palette, $col);
+}
+
+@function homePalette   ($col) {
+    @return nth($homePalette, $col);
 }
 
 $black: #000;
 $white: #fff;
 
-$base-font: 18px 'Nunito', Sans-Serif;
+$baseFont: 18px 'Nunito', Sans-Serif;
 
 // MARGINS
 @mixin m($type: 'b-25') {

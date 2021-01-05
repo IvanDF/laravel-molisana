@@ -6,9 +6,10 @@
 
 @section('content')
 
-    <div class="container">
-            <h2>HOME</h2>
-    </div>
+    <!-- Include hero -->
+    @include ('partials.homepage.hero')
 
+    <!-- Include cards -->
+    @include ('partials.homepage.cards')
 
 @endsection

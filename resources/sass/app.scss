@@ -1,6 +1,7 @@
 // FONTAWESOME
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
 
 // VARS
 @import 'partials/vars';
@@ -13,6 +14,13 @@
 
 // HEADER
 @import 'partials/header';
+
+// HOMEPAGE
+    // Hero
+    @import 'partials/homepage/hero'; 
+
+    // Cards
+    @import 'partials/homepage/cards'; 
 
 // CARDS
 @import 'partials/cards';
