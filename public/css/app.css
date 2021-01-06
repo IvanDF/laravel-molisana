@@ -6117,7 +6117,7 @@ readers do not read off random characters that represent icons */
   margin: 0 auto;
 }
 
-.btn {
+.btn, .btn-outline {
   padding: 10px 20px;
   border-radius: 16px;
   font-size: 18px;
@@ -6125,6 +6125,12 @@ readers do not read off random characters that represent icons */
   border: none;
   cursor: pointer;
   background: #fff;
+}
+.btn-outline {
+  background: none;
+  border-radius: 0;
+  color: #fff;
+  border: solid 1px #fff;
 }
 
 .df {
@@ -6426,7 +6432,7 @@ h3 {
   font-size: 41px;
   font-weight: lighter;
 }
-.cards-slider .card-txt .descr .btn {
+.cards-slider .card-txt .descr .btn, .cards-slider .card-txt .descr .btn-outline {
   margin-top: 10px;
 }
 .cards-slider .ricette {
@@ -6645,7 +6651,7 @@ h3 {
   font-size: 41px;
   font-weight: lighter;
 }
-.cards-slider .card-txt .descr .btn {
+.cards-slider .card-txt .descr .btn, .cards-slider .card-txt .descr .btn-outline {
   margin-top: 10px;
 }
 .cards-slider .ricette {
@@ -6855,6 +6861,67 @@ h3 {
   left: 0;
 }
 
+.bar {
+  background: linear-gradient(#000149, #23556d);
+  padding: 30px;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-cards .card {
+  position: relative;
+  width: calc(100% / 3);
+}
+.news-cards .card-txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 22px;
+  padding: 20px;
+  transition: background 350ms ease-in-out;
+}
+.news-cards .card-txt:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.news-cards .card-txt small {
+  position: relative;
+  font-size: 18px;
+  font-family: cursive;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 15px;
+}
+.news-cards .card-txt small::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+}
+.news-cards .card-txt h5 {
+  font-family: serif;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+/* DESKTOP VERSION */
+@media screen and (max-width: 992px) {
+  .news-cards .card {
+    width: 100%;
+  }
+}
 .main-footer {
   padding: 70px 0 0;
 }

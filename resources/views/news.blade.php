@@ -6,8 +6,6 @@
 
 @section('content')
 
-    <div class="container">
-        <h2>NEWS</h2>
-    </div>
+    @include ('partials.news-card')
 
 @endsection

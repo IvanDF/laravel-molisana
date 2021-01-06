@@ -1,0 +1,62 @@
+.bar {
+    background: linear-gradient(#000149 , #23556d );
+    padding: 30px;
+}
+
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        position: relative;
+        width: calc(100% / 3);
+    }
+    .card-txt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba($black, .6);
+        color: $white;
+        font-size: 22px;
+        padding: 20px;
+        transition: background 350ms ease-in-out;
+        &:hover {
+            background: rgba($black, .4);
+        }
+        small {
+            position: relative;
+            font-size: 18px;
+            font-family: cursive;
+            color: rgba($white, .65);
+            padding: 15px;
+            &::after {
+                content: '';
+                @include center(ab-x);
+                bottom: 0;
+                width: 25px;
+                height: 2px;
+                background: $white;
+            }
+        }
+        h5 {
+            font-family: serif;
+            font-weight: normal;
+            font-size: 26px;
+        }
+    }
+}
+
+/* DESKTOP VERSION */
+@media screen and (max-width: 992px) {
+
+    .news-cards {
+        .card {
+            width: 100%;
+        }
+    }
+}
