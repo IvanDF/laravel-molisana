@@ -16,7 +16,7 @@
 -   [JavaScript](https://www.javascript.com/) - Front-End Logic
 -   [VueJS](https://www.javascript.com/) - Front-End Framework
 -   [PHP](https://www.php.net) - Back-End Logic
--   [Laravel Mix](https://laravel-mix.com) - Back-End Package
+-   [Laravel](https://laravel.com) - Back-End Framework
 
 ## ✍️ Authors <a name = "authors"></a>
 
