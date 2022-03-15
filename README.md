@@ -6,7 +6,7 @@
 
 ---
 
-<p align="center">Web-Page of La Molisana that shows you pics and descriptions about type of Pastas.</p>
+<p align="center">La Molisana is a wep-page that shows you pics and descriptions about different types of Pasta.</p>
 <br> 
     
 ## ⛏️ Built With <a name = "tech_stack"></a>
